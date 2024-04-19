@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+    <title>Music Recommender</title>
+</head>
+<body>
+    <div id="content">
+        <h1 style="color: white;">Discover New Music</h1>
+        <input type="text" id="songInput" placeholder="Type a song..." aria-label="Song or artist name">
+        <button onclick="getRecommendations()" aria-label="Get music recommendations">Find Songs</button>
+        <div id="results"></div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

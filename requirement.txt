@@ -1,0 +1,6 @@
+Flask
+spotipy
+scikit-learn
+nltk
+pandas 
+scipy

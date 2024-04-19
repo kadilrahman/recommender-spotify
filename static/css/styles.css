@@ -1,0 +1,89 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #221f1f;
+    color: #333;
+    text-align: center;
+    padding: 40px;
+    margin: 0;
+}
+
+#content {
+    background: rgb(77, 74, 74);
+    margin: auto;
+    padding: 40px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+input[type="text"], button {
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+button {
+    background-color: #6ebb47;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover, button:focus {
+    background-color: #0056b3;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}
+
+#results div {
+    background: #221f1f; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+@media (max-width: 1024px) {
+    #results {
+        grid-template-columns: repeat(3, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    #results {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for smaller tablets and large phones */
+    }
+}
+
+@media (max-width: 480px) {
+    #results {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+.song-name {
+    color: #ffffff; 
+    font-size: 18px; 
+}
+
+.artist-name {
+    color: #ffffff; 
+    font-size: 16px; 
+}
